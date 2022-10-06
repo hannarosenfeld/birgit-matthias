@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar.js"
 
 const IndexPage = () => {
     return (
-        <main>
+        <main style={{margin: "0 8em"}}>
           <NavBar/>
         </main>
     // <main style={pageStyles}>
