@@ -11,7 +11,7 @@ function BasicExample() {
       <Container>
         <Navbar.Brand style={{color: "#E947AB"}} href="#home">
           <section>BIRGIT MATTHIAS</section>
-          <section>MALEREI</section>
+      <section style={{fontWeight: "100"}}>MALEREI</section>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse style={{flexGrow: "0", alignItems: "end"}} id="basic-navbar-nav">
