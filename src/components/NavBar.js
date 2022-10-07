@@ -1,39 +1,68 @@
-import * as React from "react"
+import React, { Link, useEffect, useState } from "react"
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import "../style/main.css"
 
-function BasicExample() {
+const navStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "baseline"
+}
+
+const buttonStyle = {
+    background: "none",
+    border: "none",
+    color: "black",
+}
+
+const modalStyle = {
+
+}
+
+const modalContentStyle = {
+    background: "#FDA1C9",
+}
+
+const navLink = {
+    color: "#f9f7f7",
+    listStyle: "none",
+}
+
+function NavModal() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <Navbar expand="lg">
-      <Container>
-        <Navbar.Brand style={{color: "#E947AB"}} href="#home">
-          <section>BIRGIT MATTHIAS</section>
-      <section style={{fontWeight: "100"}}>MALEREI</section>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse style={{flexGrow: "0", alignItems: "end"}} id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <Button style={buttonStyle} onClick={handleShow}>
+        <FontAwesomeIcon icon={faBars} />
+      </Button>
+
+      <Modal style={modalStyle} show={show} onHide={handleClose}>
+        <Modal.Body style={modalContentStyle}>
+          <ul style={navLink} id="modal-menu">
+            <li href="#">HOME</li>
+            <li href="#">GALERIE</li>
+            <li href="#">AKTUELLES</li>
+            <li href="#">KONTAKT</li>
+            <li href="#">PRESSE</li>
+          </ul>
+        </Modal.Body>
+      </Modal>
+    </>
   );
 }
 
-export default BasicExample;
+export default function NavBar() {
+    return (
+        <div style={navStyle}>
+          <div>brand</div>
+            <NavModal/>
+        </div>
+    )
+}
