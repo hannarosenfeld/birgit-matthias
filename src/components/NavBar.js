@@ -16,6 +16,7 @@ const buttonStyle = {
     background: "none",
     border: "none",
     color: "black",
+    fontSize: "1.8em"
 }
 
 const modalStyle = {
@@ -24,6 +25,8 @@ const modalStyle = {
 
 const modalContentStyle = {
     background: "#FDA1C9",
+    padding: "1em 2.5em",
+    fontSize: "1.5em"
 }
 
 const navLink = {

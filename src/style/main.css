@@ -1,16 +1,23 @@
+@font-face {
+    font-family: globalfont;
+    src: url(Cocomat-Light-trial.ttf);
+}
+
+html, body {
+    font-family: globalfont, monospace;
+}
+
+/* NAVBAR */
 #modal-menu li {
     margin-left: -1em;
 }
-
 .modal-backdrop {
     opacity: 0 !important;
 }
-
 .modal-dialog {
     margin-top: 0;
     margin-right: 8em;
 }
-
 .modal-content {
     width: auto;
     float: right;
