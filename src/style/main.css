@@ -22,3 +22,44 @@ html, body {
     width: auto;
     float: right;
 }
+
+/* MEDIA QUERIES */
+
+/* iPads (portrait) AND Smartphones (portrait) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    /* Styles */
+    main {
+        margin: 0 0.5em !important;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles */
+
+}
