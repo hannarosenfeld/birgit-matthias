@@ -4,12 +4,15 @@ import Modal from 'react-bootstrap/Modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
+import logo from "../images/logo.png"
+
 import "../style/main.css"
 
 const navStyle = {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "baseline"
+    alignItems: "baseline",
+    margin: "0.5em auto"
 }
 const buttonStyle = {
     background: "none",
@@ -58,7 +61,7 @@ function NavModal() {
 export default function NavBar() {
     return (
         <div style={navStyle}>
-          <div>brand</div>
+          <div><img src={logo}/></div>
             <NavModal/>
         </div>
     )
