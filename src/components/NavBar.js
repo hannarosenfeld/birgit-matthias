@@ -11,28 +11,22 @@ const navStyle = {
     justifyContent: "space-between",
     alignItems: "baseline"
 }
-
 const buttonStyle = {
     background: "none",
     border: "none",
     color: "black",
     fontSize: "1.8em"
 }
-
-const modalStyle = {
-
-}
-
 const modalContentStyle = {
     background: "#FDA1C9",
     padding: "1em 2.5em",
     fontSize: "1.5em"
 }
-
 const navLink = {
     color: "#f9f7f7",
     listStyle: "none",
 }
+
 
 function NavModal() {
   const [show, setShow] = useState(false);
@@ -46,7 +40,7 @@ function NavModal() {
         <FontAwesomeIcon icon={faBars} />
       </Button>
 
-      <Modal style={modalStyle} show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose}>
         <Modal.Body style={modalContentStyle}>
           <ul style={navLink} id="modal-menu">
             <li href="#">HOME</li>
