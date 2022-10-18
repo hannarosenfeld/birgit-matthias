@@ -8,7 +8,7 @@ export default function Layout({ children }) {
         <div
           style={{
               margin: `0 auto`,
-              maxWidth: 650,
+              maxWidth: `75vw`,
               padding: `0 1rem`
           }}>
           <NavBar/>

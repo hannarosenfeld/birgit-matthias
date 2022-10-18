@@ -11,7 +11,7 @@ const footer = {
     display: "flex",
     justifyContent: "space-between",
     width: "100%",
-    maxWidth: "650px",
+    maxWidth: "75vw",
     alignItems: "center",
     padding: "0 2em"
 }
