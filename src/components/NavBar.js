@@ -20,6 +20,9 @@ const buttonStyle = {
     color: "black",
     fontSize: "1.8em"
 }
+const modalStyle = {
+    margin: "0.5em auto"
+}
 const modalContentStyle = {
     background: "#FDA1C9",
     padding: "1em 2.5em",
@@ -43,7 +46,7 @@ function NavModal() {
         <FontAwesomeIcon icon={faBars} />
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal style={modalStyle}show={show} onHide={handleClose}>
         <Modal.Body style={modalContentStyle}>
           <ul style={navLink} id="modal-menu">
             <li href="#">HOME</li>
