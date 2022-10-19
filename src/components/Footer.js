@@ -30,8 +30,8 @@ export default function Footer() {
           <ul style={footerNav}>
             <li href="#" style={{marginLeft: "-2em"}}>IMPRESSUM</li>
             <li href="#">DATENSCHUTZ</li>
-            <li href="#"><FontAwesomeIcon icon={faInstagram} /></li>
-            <li href="#"><FontAwesomeIcon icon={faFacebookF} /></li>
+            <li><a><FontAwesomeIcon icon={faInstagram} /></a></li>
+            <li><a href="https://www.facebook.com/BirgitMatthiasKunst/"><FontAwesomeIcon icon={faFacebookF} /></a></li>
           </ul>
         </div>
     )
