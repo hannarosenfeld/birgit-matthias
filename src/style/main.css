@@ -26,7 +26,7 @@ html, body {
 /* FOOTER */
 .footer li {
     list-style: none;
-    margin-left: -2em;
+    margin-right: 10%;
 }
 
 /* MEDIA QUERIES */
