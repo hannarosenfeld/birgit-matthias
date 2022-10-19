@@ -10,7 +10,7 @@ const IndexPage = () => {
     return (
         <Layout>
           <main style={{display: "flex"}}>
-            <img src={wolf} style={{width: "55vw", margin: "3em auto"}}/>
+        <img src={wolf} style={{width: "55vw", margin: "3em auto"}}/>
           </main>
         </Layout>
     )

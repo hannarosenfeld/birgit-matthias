@@ -6,7 +6,7 @@ import "../style/main.css"
 
 
 const footer = {
-    position: "absolute",
+
     bottom: "0",
     height: "2.5rem",
     display: "flex",
