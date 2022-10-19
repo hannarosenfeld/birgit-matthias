@@ -6,7 +6,6 @@ import "../style/main.css"
 
 
 const footer = {
-
     bottom: "0",
     height: "2.5rem",
     display: "flex",
@@ -14,7 +13,7 @@ const footer = {
     width: "100%",
     maxWidth: "75vw",
     alignItems: "center",
-    padding: "0 1em"
+
 }
 
 const footerNav = {

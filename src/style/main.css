@@ -7,6 +7,18 @@ html, body {
     font-family: globalfont, monospace;
 }
 
+body {
+    /* what we already have */
+    margin: 0;
+    padding: 0;  /* what we're adding */
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+    min-height: 100vh;
+}
 
 /* NAVBAR */
 #modal-menu li {
@@ -26,7 +38,7 @@ html, body {
 /* FOOTER */
 .footer li {
     list-style: none;
-    margin-right: 10%;
+    margin-right: 12%;
 }
 
 /* MEDIA QUERIES */
@@ -41,27 +53,27 @@ html, body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
+    /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
-  /* Styles */
+    /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-  /* Styles */
+    /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
+    /* Styles */
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
+    /* Styles */
 }
 
 /* iPads (portrait) ----------- */

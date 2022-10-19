@@ -12,7 +12,9 @@ export default function Layout({ children }) {
               padding: `0 1rem`
           }}>
           <NavBar/>
-          {children}
+          <div className="main">
+            {children}
+          </div>
           <Footer/>
         </div>
     )
