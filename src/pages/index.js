@@ -1,7 +1,10 @@
 import * as React from "react"
+import { BgImage } from 'gbimage-bridge';
+import { converToBgImage } from "gbimage-bridge"
 
 import NavBar from "../components/NavBar"
 import Layout from "../components/Layout"
+import BildContainer from "../components/BildContainer"
 
 import wolf from "../images/wolf.jpg"
 
@@ -10,7 +13,7 @@ const IndexPage = () => {
     return (
         <Layout>
           <main style={{display: "flex"}}>
-        <img src={wolf} style={{width: "55vw", margin: "3em auto"}}/>
+            <BildContainer/>
           </main>
         </Layout>
     )
