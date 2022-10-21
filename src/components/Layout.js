@@ -10,13 +10,16 @@ export default function Layout({ children }) {
           style={{
               margin: `0 auto`,
               maxWidth: `75vw`,
-              padding: `0 1rem`
+              padding: `0 1rem`,
+              flexDirection: `column`,
           }}>
           <NavBar/>
           <div
             className="main"
             style={{
-                margin: "2em auto 0 auto"
+                margin: "2em auto 0 auto",
+                display: "flex",
+
             }}
           >
             {children}

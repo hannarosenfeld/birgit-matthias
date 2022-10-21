@@ -4,13 +4,14 @@ import { graphql } from 'gatsby'
 import NavBar from "../components/NavBar"
 import Layout from "../components/Layout"
 import BildContainer from "../components/BildContainer"
-
+import Galerie from "../components/Galerie"
 
 const IndexPage = ({ data }) => {
     return (
         <Layout>
-          <main style={{display: "flex"}}>
+          <main>
             <BildContainer image={data.allContentfulBild.nodes}/>
+            <Galerie/>
           </main>
         </Layout>
     )
