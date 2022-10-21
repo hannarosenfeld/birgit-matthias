@@ -1,4 +1,6 @@
-import React, { Link, useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
+import { Link } from "gatsby"
+
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -49,7 +51,7 @@ function NavModal() {
       <Modal style={modalStyle}show={show} onHide={handleClose}>
         <Modal.Body style={modalContentStyle}>
           <ul style={navLink} id="modal-menu">
-            <li href="#">HOME</li>
+            <li><Link to="/">HOME</Link></li>
             <li href="#">GALERIE</li>
             <li href="#">AKTUELLES</li>
             <li href="#">KONTAKT</li>
