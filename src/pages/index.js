@@ -1,23 +1,34 @@
 import * as React from "react"
-import { BgImage } from 'gbimage-bridge';
-import { converToBgImage } from "gbimage-bridge"
+import { graphql } from 'gatsby'
 
 import NavBar from "../components/NavBar"
 import Layout from "../components/Layout"
 import BildContainer from "../components/BildContainer"
 
-import wolf from "../images/wolf.jpg"
 
-
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
     return (
         <Layout>
           <main style={{display: "flex"}}>
-            <BildContainer/>
+            <BildContainer image={data.allContentfulBild.nodes}/>
           </main>
         </Layout>
     )
 }
+
+export const query = graphql`
+  query HomePageQuery {
+    allContentfulBild {
+      nodes {
+        titel
+        id
+        image {
+          gatsbyImageData(width: 1200, placeholder: BLURRED)
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
 
