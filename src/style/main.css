@@ -49,6 +49,18 @@ body {
     main {
         margin: 0 0.5em !important;
     }
+    #navbar {
+
+    }
+    #layout {
+        max-width: 100% !important;
+    }
+    #bildcontainer{
+
+    }
+    #bild {
+        width: 100% !important;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */

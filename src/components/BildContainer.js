@@ -22,12 +22,13 @@ const bildStyling = {
 function BildContainer(props) {
     const image = props.image
     return(
-        <div className="mt-4" style={bildContainer}>
+        <div id="bild-container" className="mt-4" style={bildContainer}>
           {image.map(img => {
               const image = getImage(img.image)
               return(
                   <div key={img.id} style={{width: "100%", margin: "0 auto"}}>
                     <BgImage
+                      id="bild"
                       className="mb-5 d-flex align-items-end"
                       image={image}
                       style={bildStyling}

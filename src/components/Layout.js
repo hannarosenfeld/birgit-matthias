@@ -6,6 +6,7 @@ import Footer from "./Footer"
 export default function Layout({ children }) {
     return (
         <div
+          id="layout"
           style={{
               margin: `0 auto`,
               maxWidth: `75vw`,

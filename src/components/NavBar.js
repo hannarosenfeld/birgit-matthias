@@ -63,7 +63,7 @@ function NavModal() {
 
 export default function NavBar() {
     return (
-        <div style={navStyle}>
+        <div id="navbar" style={navStyle}>
           <div><img src={logo}/></div>
             <NavModal/>
         </div>
