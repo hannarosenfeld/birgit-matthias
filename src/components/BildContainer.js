@@ -7,7 +7,7 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image'
 const bildContainer = {
     width: "100%",
     display: "flex",
-    margin: "3em auto",
+    margin: "0 auto",
     alignItems: "center"
 }
 const bildStyling = {
@@ -22,7 +22,7 @@ const bildStyling = {
 function BildContainer(props) {
     const image = props.image
     return(
-        <div id="bild-container" className="mt-4" style={bildContainer}>
+        <div id="bild-container" style={bildContainer}>
           {image.map(img => {
               const image = getImage(img.image)
               return(

@@ -39,6 +39,29 @@ body {
     width: auto;
     float: right;
 }
+
+/* GALERIE */
+#galerie-list {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#galerie-list li {
+    width: 19vw;
+    height: 19vw;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+#galerie-list li img {
+    min-width: 100%;
+}
+
 /* FOOTER */
 .footer li {
     list-style: none;
@@ -53,23 +76,26 @@ body {
     main {
         margin: 0 0.5em !important;
     }
-    #navbar {
-
-    }
     #layout {
         max-width: 100% !important;
     }
-    #bildcontainer{
-
+    #galerie-list li {
+        width: 29vw;
+        height: 29vw;
     }
+
     #bild {
         width: 100% !important;
     }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     /* Styles */
+    #galerie-list li {
+        width: 75vw;
+        height: 75vw;
+    }
 }
 
 /* Smartphones (landscape) ----------- */

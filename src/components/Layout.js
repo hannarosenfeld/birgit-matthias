@@ -13,7 +13,12 @@ export default function Layout({ children }) {
               padding: `0 1rem`
           }}>
           <NavBar/>
-          <div className="main">
+          <div
+            className="main"
+            style={{
+                margin: "2em auto 0 auto"
+            }}
+          >
             {children}
           </div>
           <Footer/>

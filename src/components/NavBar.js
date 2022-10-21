@@ -52,7 +52,7 @@ function NavModal() {
         <Modal.Body style={modalContentStyle}>
           <ul style={navLink} id="modal-menu">
             <li><Link to="/">HOME</Link></li>
-            <li href="#">GALERIE</li>
+            <li><Link to="/galerie">GALERIE</Link></li>
             <li href="#">AKTUELLES</li>
             <li href="#">KONTAKT</li>
             <li href="#">PRESSE</li>
@@ -66,7 +66,7 @@ function NavModal() {
 export default function NavBar() {
     return (
         <div id="navbar" style={navStyle}>
-          <div><img src={logo}/></div>
+          <Link to="/"><img src={logo}/></Link>
             <NavModal/>
         </div>
     )
