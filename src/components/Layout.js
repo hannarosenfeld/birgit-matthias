@@ -17,7 +17,7 @@ export default function Layout({ children }) {
           <div
             className="main"
             style={{
-                margin: "2em auto 0 auto",
+                margin: "2.5em auto 0 auto",
                 display: "flex",
 
             }}

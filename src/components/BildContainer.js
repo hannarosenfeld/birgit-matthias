@@ -12,10 +12,9 @@ const bildContainer = {
 }
 const bildStyling = {
     margin: "0 auto",
-    maxHeight: "100%",
     objectFit: "contain",
-    height: "80vh",
-    width: "85%",
+    height: "75vh",
+    width: "65vw",
 }
 
 
