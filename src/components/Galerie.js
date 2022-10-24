@@ -1,18 +1,26 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { BgImage } from "gbimage-bridge"
 
 const galerieStyle = {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+
 }
 const bildbox = {
-    border: "2px solid",
-    width: "19vw",
-    height: "19vw",
-    marginBottom: "2em"
+    marginBottom: "2em",
+    height: "20vw",
+    width: "20vw",
+    overflow: "hidden"
 }
+const centeredText = {
 
+    Color: "#E42B9E",
+    textShadow: "1px 1px #000123"
+
+}
 export default function Galerie() {
     return(
         <StaticQuery
@@ -22,6 +30,8 @@ export default function Galerie() {
               nodes {
                 bilder {
                   title
+                  gatsbyImageData(width: 620)
+
                 }
               }
             }
@@ -31,17 +41,24 @@ export default function Galerie() {
               const rubriken = data.allContentfulGalerieMenu
 
               return(
-                  <div style={{border: "2px solid blue", width: "100%", heigth: "45vw"}}>
+                  <div style={{ width: "100%", heigth: "45vw"}}>
                     {rubriken.nodes.map(rubrik => {
                         return(
                             <div style={galerieStyle} id="galerie-list">
-                              {rubrik.bilder.map(bild => (
+                              {rubrik.bilder.map(bild => {
+                                  const image = getImage(bild.gatsbyImageData)
+                                  console.log(bild)
+                                  return(
                                   <div style={bildbox} className="galerie-list-box">
-                                  <div style={{width: "100%"}}>
-                                      <div className="centered" style={{fontSize: "85%"}}>{bild.title}</div>
+                                      <GatsbyImage
+                                        image={image}
+                                        style={{width: "150%"}}
+                                      />
+                                        <div style={centeredText}>{bild.title}</div>
+
                                     </div>
-                                  </div>
-                        )
+)
+                        }
                                          )}</div>
                         )
 
