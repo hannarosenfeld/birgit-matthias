@@ -14,7 +14,7 @@ const bildStyling = {
     margin: "0 auto",
     objectFit: "contain",
     height: "75vh",
-    width: "65vw",
+    width: "100%",
 }
 
 

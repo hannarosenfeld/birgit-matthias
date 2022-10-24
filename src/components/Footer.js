@@ -13,6 +13,7 @@ const footer = {
     width: "100%",
     maxWidth: "75vw",
     alignItems: "center",
+    marginTop: "2em",
 }
 
 const footerNav = {
