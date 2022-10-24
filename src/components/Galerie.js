@@ -7,18 +7,24 @@ const galerieStyle = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-between",
-
+    zIndex: "0"
 }
 const bildbox = {
     marginBottom: "2em",
     height: "20vw",
     width: "20vw",
-    overflow: "hidden"
+    overflow: "hidden",
+    position: "relative",
+    textAlign: "center"
 }
 const centeredText = {
-
-    Color: "#E42B9E",
-    textShadow: "1px 1px #000123"
+    color: "#E42B9E",
+    textShadow: "1px 1px #000123",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    zIndex: "9"
 
 }
 export default function Galerie() {
@@ -49,17 +55,18 @@ export default function Galerie() {
                                   const image = getImage(bild.gatsbyImageData)
                                   console.log(bild)
                                   return(
-                                  <div style={bildbox} className="galerie-list-box">
-                                      <GatsbyImage
-                                        image={image}
-                                        style={{width: "150%"}}
-                                      />
+                                      <div style={bildbox} className="galerie-list-box">
                                         <div style={centeredText}>{bild.title}</div>
+                                        <GatsbyImage
+                                          image={image}
+                                          style={{width: "150%"}}
+                                        />
 
-                                    </div>
-)
-                        }
-                                         )}</div>
+
+                                      </div>
+                                  )
+                              }
+                                                )}</div>
                         )
 
                     })}
