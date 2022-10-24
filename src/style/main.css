@@ -60,6 +60,13 @@ body {
     #layout {
         max-width: 100% !important;
     }
+    #galerie-list {
+
+    }
+    .galerie-list-box {
+        width: 30vw !important;
+        height: 30vw !important;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
