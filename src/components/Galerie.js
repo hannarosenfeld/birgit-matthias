@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { BgImage } from "gbimage-bridge"
 
@@ -19,7 +19,6 @@ const bildbox = {
 }
 
 
-
 function Bild(props) {
     const [isHover, setIsHover] = useState(false)
 
@@ -27,6 +26,7 @@ function Bild(props) {
     const title = props.title
 
     const centeredText = {
+        fontSize: "2.4vw",
         color: "#E42B9E",
         textShadow: "1px 1px #000123",
         position: "absolute",
@@ -34,9 +34,12 @@ function Bild(props) {
         left: "50%",
         transform: "translate(-50%, -50%)",
         zIndex: "9",
-        display: isHover ? "inherit" : "none"
+        display: isHover ? "inherit" : "none",
     }
-
+    const imageStyle = {
+        width: "150%",
+        filter: isHover ? "brightness(150%)" : "none"
+    }
     const handleMouseEnter = () => {
         setIsHover(true)
         console.log(title)
@@ -53,11 +56,13 @@ function Bild(props) {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
+          <Link to="/">
           <GatsbyImage
             image={image}
-            style={{width: "150%"}}
+            style={imageStyle}
           />
-          <div style={centeredText}>{title}</div>
+        <div style={centeredText}>{title}</div>
+        </Link>
         </div>
     )
 }
