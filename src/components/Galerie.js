@@ -23,6 +23,7 @@ function Bild(props) {
 
     const image = props.image
     const title = props.title
+    const slug = props.slug
 
     const centeredText = {
         fontSize: "2.4vw",
@@ -45,7 +46,8 @@ function Bild(props) {
     const handleMouseLeave = () => {
         setIsHover(false)
     }
-    const link = `/galerie/${title}`
+    const link = `/galerie/${slug}`
+
     return(
         <div
           style={bildbox}
@@ -75,6 +77,7 @@ export default function Galerie() {
               nodes {
                 bilder {
                     title
+                    slug
                     image{
                       gatsbyImageData(width: 620)
                   }
@@ -91,10 +94,11 @@ export default function Galerie() {
                         return(
                             <div style={galerieStyle} id="galerie-list">
                               {rubrik.bilder.map(bild => {
+                                  console.log(bild.slug)
                                   const image = getImage(bild.image.gatsbyImageData)
 
                                   return(
-                                      <Bild image={image} title={bild.title}/>
+                                      <Bild image={image} title={bild.title} slug={bild.slug}/>
                                   )
                               }
                                                 )}</div>
