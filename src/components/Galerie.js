@@ -18,7 +18,6 @@ const bildbox = {
     textAlign: "center"
 }
 
-
 function Bild(props) {
     const [isHover, setIsHover] = useState(false)
 
@@ -42,13 +41,11 @@ function Bild(props) {
     }
     const handleMouseEnter = () => {
         setIsHover(true)
-        console.log(title)
     }
-
     const handleMouseLeave = () => {
         setIsHover(false)
     }
-
+    const link = `/galerie/${title}`
     return(
         <div
           style={bildbox}
@@ -56,7 +53,7 @@ function Bild(props) {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <Link to="/">
+          <Link to={link}>
           <GatsbyImage
             image={image}
             style={imageStyle}
@@ -77,9 +74,10 @@ export default function Galerie() {
             allContentfulGalerieMenu {
               nodes {
                 bilder {
-                  title
-                  gatsbyImageData(width: 620)
-
+                    title
+                    image{
+                      gatsbyImageData(width: 620)
+                  }
                 }
               }
             }
@@ -87,14 +85,13 @@ export default function Galerie() {
        `}
           render={data => {
               const rubriken = data.allContentfulGalerieMenu
-
               return(
                   <div style={{ width: "100%", heigth: "45vw"}}>
                     {rubriken.nodes.map(rubrik => {
                         return(
                             <div style={galerieStyle} id="galerie-list">
                               {rubrik.bilder.map(bild => {
-                                  const image = getImage(bild.gatsbyImageData)
+                                  const image = getImage(bild.image.gatsbyImageData)
 
                                   return(
                                       <Bild image={image} title={bild.title}/>
@@ -106,9 +103,7 @@ export default function Galerie() {
                     })}
                   </div>
               )
-          }
-
-                 }
+          }}
         />
     )
 }
