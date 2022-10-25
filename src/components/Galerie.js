@@ -38,7 +38,7 @@ function Bild(props) {
     }
     const imageStyle = {
         width: "150%",
-        filter: isHover ? "brightness(150%)" : "none"
+        filter: isHover ? "brightness(180%) contrast(50%)" : "none",
     }
     const handleMouseEnter = () => {
         setIsHover(true)
