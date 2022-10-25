@@ -13,7 +13,7 @@ const bildContainer = {
 const bildStyling = {
     margin: "0 auto",
     objectFit: "contain",
-    height: "85vh",
+    height: "75vh",
     width: "100%",
 }
 
