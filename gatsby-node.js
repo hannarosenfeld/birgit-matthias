@@ -8,6 +8,10 @@ exports.createPages = async function ({ actions, graphql }) {
               title
             }
             slug
+          werke {
+            title
+            gatsbyImageData(width: 250)
+          }
           }
         }
       }
