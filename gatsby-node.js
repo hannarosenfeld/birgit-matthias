@@ -4,6 +4,9 @@ exports.createPages = async function ({ actions, graphql }) {
       allContentfulGalerieMenu {
         nodes {
           bilder {
+            title {
+              title
+            }
             slug
           }
         }
@@ -16,7 +19,10 @@ exports.createPages = async function ({ actions, graphql }) {
             actions.createPage({
                 path: `galerie/${slug}`,
                 component: require.resolve(`./src/templates/galerie.js`),
-                context: { slug: slug },
+                context: {
+                    slug: slug,
+                    category: bild
+                },
             })
         })
     })
