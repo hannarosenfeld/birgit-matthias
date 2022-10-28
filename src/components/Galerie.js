@@ -22,7 +22,7 @@ function Bild(props) {
     const [isHover, setIsHover] = useState(false)
 
     const image = props.image
-    const title = props.title
+    const title = props.title.title
     const slug = props.slug
 
     const centeredText = {
@@ -76,7 +76,9 @@ export default function Galerie() {
             allContentfulGalerieMenu {
               nodes {
                 bilder {
-                    title
+                    title {
+                      title
+                    }
                     slug
                     image{
                       gatsbyImageData(width: 620)
