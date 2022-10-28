@@ -22,7 +22,7 @@ export default function GalerieTemplate({ pageContext }) {
                 console.log(werk)
                 const image = getImage(werk.gatsbyImageData)
                 return(
-                    <GatsbyImage image={image} style={{width: "30%"}}/>
+                    <GatsbyImage className="galerie-image" image={image} style={{width: "30%"}}/>
                 )
             })}
         </div>

@@ -67,6 +67,9 @@ body {
         width: 30vw !important;
         height: 30vw !important;
     }
+    .galerie-image {
+        width: 48% !important;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -75,6 +78,9 @@ body {
     #galerie-list li {
         width: 75vw;
         height: 75vw;
+    }
+    .galerie-image {
+        width: 100% !important;
     }
 }
 
