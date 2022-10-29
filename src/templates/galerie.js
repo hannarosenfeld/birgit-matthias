@@ -19,17 +19,20 @@ export default function GalerieTemplate({ pageContext }) {
             <br/>
             <div className="d-flex flex-wrap justify-content-between">
               {category.werke.map(werk =>{
-                  console.log(werk)
                   const image = getImage(werk.gatsbyImageData)
                   return(
-                      <GatsbyImage
+                      <div
                         className="galerie-image"
-                        image={image}
                         style={{
-                            width: "30%",
+                            width: "28%",
                             marginBottom: "1.5em"
-                        }}
-                      />
+                        }}>
+                        <Link to="#">
+                          <GatsbyImage
+                            image={image}
+                          />
+                        </Link>
+                      </div>
                   )
               })}
             </div>
