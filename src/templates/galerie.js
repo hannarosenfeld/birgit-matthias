@@ -17,16 +17,23 @@ export default function GalerieTemplate({ pageContext }) {
                   maxWidth: "fit-content"
               }}>{category.title.title}</h4>
             <br/>
-            <div className="d-flex flex-wrap justify-content-between" style={{gap: "1em"}}>
-            {category.werke.map(werk =>{
-                console.log(werk)
-                const image = getImage(werk.gatsbyImageData)
-                return(
-                    <GatsbyImage className="galerie-image" image={image} style={{width: "30%"}}/>
-                )
-            })}
-        </div>
-        </div>
+            <div className="d-flex flex-wrap justify-content-between">
+              {category.werke.map(werk =>{
+                  console.log(werk)
+                  const image = getImage(werk.gatsbyImageData)
+                  return(
+                      <GatsbyImage
+                        className="galerie-image"
+                        image={image}
+                        style={{
+                            width: "30%",
+                            marginBottom: "1.5em"
+                        }}
+                      />
+                  )
+              })}
+            </div>
+          </div>
         </Layout>
     )
 }
