@@ -1,20 +1,26 @@
 exports.createPages = async function ({ actions, graphql }) {
     const { data } = await graphql(`
     query {
-      allContentfulGalerieMenu {
-        nodes {
-          bilder {
-            title {
-              title
-            }
-            slug
-          werke {
-            title
-            gatsbyImageData(width: 350)
-          }
+  allContentfulGalerieMenu {
+    nodes {
+      bilder {
+        image {
+          gatsbyImageData
+        }
+        title {
+          title
+        }
+        slug
+        kunstwerke {
+          title
+          slug
+          image {
+            gatsbyImageData
           }
         }
       }
+    }
+  }
     }
     `)
     data.allContentfulGalerieMenu.nodes.forEach(node => {
@@ -27,6 +33,15 @@ exports.createPages = async function ({ actions, graphql }) {
                     slug: slug,
                     category: bild
                 },
+            })
+            bild.kunstwerke.map(werk => {
+                actions.createPage({
+                    path: `galerie/${slug}/${werk.slug}`,
+                    component: require.resolve(`./src/templates/artwork.js`),
+                    context: {
+                        artwork: werk
+                    },
+                })
             })
         })
     })
