@@ -24,7 +24,7 @@ export default function GalerieTemplate({ pageContext }) {
                       <div
                         className="galerie-image"
                         style={{
-                            width: "28%",
+                            width: "23%",
                             marginBottom: "1.5em"
                         }}>
                         <Link to="#">

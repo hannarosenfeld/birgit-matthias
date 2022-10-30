@@ -43,6 +43,7 @@ body {
 /* GALERIE */
 
 
+
 /* FOOTER */
 .footer li {
     list-style: none;
@@ -68,7 +69,7 @@ body {
         height: 30vw !important;
     }
     .galerie-image {
-        width: 49% !important;
+        width: 30% !important;
     }
 }
 
