@@ -14,6 +14,10 @@ exports.createPages = async function ({ actions, graphql }) {
         kunstwerke {
           title
           slug
+          date
+          description {
+            description
+          }
           image {
             gatsbyImageData
           }
