@@ -8,10 +8,10 @@ import Galerie from "../components/Galerie"
 const IndexPage = ({ data }) => {
     return (
         <Layout>
-        <main style={{width: "65vw", margin: "0 auto"}}>
+          <div>
             <BildContainer image={data.allContentfulBild.nodes}/>
             <Galerie/>
-          </main>
+          </div>
         </Layout>
     )
 }

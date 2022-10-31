@@ -14,16 +14,14 @@ export default function Layout({ children }) {
               flexDirection: `column`,
           }}>
           <NavBar/>
-          <div
-            className="main"
-            style={{
-                margin: "2.5em auto 0 auto",
-                display: "flex",
-
-            }}
-          >
+          <main style={{
+              width: "65vw",
+              margin: "2.5em auto 0 auto",
+              flexGrow: "1",
+              minHeight: "70vh"
+          }}>
             {children}
-          </div>
+          </main>
           <Footer/>
         </div>
     )
