@@ -18,7 +18,7 @@ export default function Layout({ children }) {
               width: "65vw",
               margin: "2.5em auto 0 auto",
               flexGrow: "1",
-              minHeight: "70vh"
+              minHeight: "71.5vh"
           }}>
             {children}
           </main>
