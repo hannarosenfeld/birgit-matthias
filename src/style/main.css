@@ -5,12 +5,13 @@
 
 html, body {
     font-family: globalfont, monospace;
+    min-height: 100%;
 }
 
 body {
-    /* what we already have */
+    min-height: 100vh;
     margin: 0;
-    padding: 0;  /* what we're adding */
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
