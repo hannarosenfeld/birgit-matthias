@@ -37,7 +37,9 @@ body {
 }
 
 /* GALERIE */
-
+.artwork-container img {
+    object-fit: contain !important;
+}
 
 
 /* FOOTER */
