@@ -13,7 +13,13 @@ export default function ArtWork({ pageContext }) {
         >
           <Layout>
             <div
-              className="d-flex"
+              className="artwork-container d-flex"
+              style={{
+                  margin: "0",
+                  padding: "0",
+                  width: "100%",
+                  margin: "auto 0"
+              }}
             >
               <div
                 className="d-flex"

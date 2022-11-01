@@ -15,10 +15,11 @@ export default function Layout({ children }) {
           }}>
           <NavBar/>
           <main style={{
-              width: "65vw",
-              margin: "2.5em auto 0 auto",
+              width: "auto",
               flexGrow: "1",
-              minHeight: "79.5vh"
+              minHeight: "83vh",
+              display: "flex",
+              flexDirection: "column"
           }}>
             {children}
           </main>
