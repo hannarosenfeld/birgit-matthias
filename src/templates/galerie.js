@@ -10,7 +10,7 @@ export default function GalerieTemplate({ pageContext }) {
     return(
         <Layout>
           <div
-            style={{margin: "3.5em 0"}}
+            style={{margin: "4em 0"}}
           >
             <h4
               style={{
