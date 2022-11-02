@@ -10,14 +10,16 @@ export default function GalerieTemplate({ pageContext }) {
     return(
         <Layout>
           <div
-            style={{width: "88%", margin: "2.5em auto 0 auto"}}
+            style={{margin: "3.5em 0"}}
           >
             <h4
               style={{
                   borderBottom: "1px solid black",
                   paddingBottom: "2px",
+                  marginLeft: "3em",
                   maxWidth: "fit-content"
               }}>{category.title.title}</h4>
+            <br/>
             <br/>
             <div className="d-flex flex-wrap justify-content-between">
               {category.kunstwerke.map(werk =>{
