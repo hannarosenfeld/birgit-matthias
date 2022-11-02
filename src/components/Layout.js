@@ -13,7 +13,9 @@ export default function Layout({ children }) {
               padding: `0 1rem`,
               flexDirection: `column`,
           }}>
-          <NavBar/>
+          <header>
+            <NavBar/>
+          </header>
           <main style={{
               flexGrow: "1",
               minHeight: "77vh",
@@ -22,7 +24,10 @@ export default function Layout({ children }) {
           }}>
             {children}
           </main>
-          <Footer />
+          <footer>
+            <Footer />
+          </footer>
+
         </div>
     )
 }

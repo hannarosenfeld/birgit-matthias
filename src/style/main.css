@@ -16,6 +16,28 @@ body {
     flex-direction: column;
 }
 
+#layout {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+ 
+#layout > header {
+  grid-area: header;
+}
+ 
+#layout > main {
+  grid-area: main;
+  padding: 15px 5px 10px 5px;
+}
+ 
+#layout > footer {
+  grid-area: footer;
+}
 /* NAVBAR */
 #modal-menu li {
     margin-left: -1em;
@@ -58,8 +80,11 @@ body {
     #layout {
         width: 100% !important;
     }
-    #galerie-list {
-
+    #navbar {
+        margin: 0;
+    }
+    #bild-container {
+        max-width: 100vw !important;
     }
     .galerie-list-box {
         width: 30vw !important;
@@ -67,6 +92,9 @@ body {
     }
     .galerie-image {
         width: 30% !important;
+    }
+    .artwork-container {
+        flex-direction: column;
     }
 }
 
