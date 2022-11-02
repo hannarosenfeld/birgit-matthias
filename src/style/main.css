@@ -99,6 +99,14 @@ body {
     .artwork-container {
         flex-direction: column;
     }
+    #artwork-image-container {
+        width: 100% !important;
+    }
+    #artwork-description {
+        align-self: flex-end;
+        margin: 1em !important;
+    }
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */

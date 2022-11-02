@@ -22,15 +22,16 @@ export default function ArtWork({ pageContext }) {
               }}
             >
               <div
-                className="d-flex"
+                id="artwork-image-container"
+                className="d-flex mt-3"
                 style={{width: "84%"}}
               >
                 <GatsbyImage
-
                   image={image}
                 />
               </div>
               <div
+                id="artwork-description"
                 style={{
                     margin: "0 3em",
                     fontFamily: "arial"
