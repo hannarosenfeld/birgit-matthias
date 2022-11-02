@@ -8,6 +8,7 @@ const bildContainer = {
     width: "100%",
     display: "flex",
     margin: "0 auto",
+    height: "90vh",
     alignItems: "center"
 }
 const bildStyling = {
