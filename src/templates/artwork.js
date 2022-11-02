@@ -24,7 +24,7 @@ export default function ArtWork({ pageContext }) {
               <div
                 id="artwork-image-container"
                 className="d-flex"
-                style={{width: "84%"}}
+                style={{maxWidth: "82%"}}
               >
                 <GatsbyImage
                   image={image}
