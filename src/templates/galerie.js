@@ -9,7 +9,9 @@ export default function GalerieTemplate({ pageContext }) {
 
     return(
         <Layout>
-          <div>
+          <div
+            style={{width: "88%", margin: "2.5em auto 0 auto"}}
+          >
             <h4
               style={{
                   borderBottom: "1px solid black",
