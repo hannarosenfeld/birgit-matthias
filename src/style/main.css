@@ -1,7 +1,13 @@
 @font-face {
-    font-family: globalfont;
+    font-family: globalfont-alt;
     src: url(Cocomat-Light-trial.ttf);
 }
+
+@font-face {
+    font-family: globalfont;
+    src: url(D-DINCondensed.otf);
+}
+
 
 html, body {
     font-family: globalfont, monospace;

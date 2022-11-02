@@ -13,7 +13,7 @@ export default function ArtWork({ pageContext }) {
         >
           <Layout>
             <div
-              className="artwork-container d-flex"
+              className="artwork-container d-flex mt-5"
               style={{
                   margin: "0",
                   padding: "0",
@@ -23,7 +23,7 @@ export default function ArtWork({ pageContext }) {
             >
               <div
                 id="artwork-image-container"
-                className="d-flex mt-3"
+                className="d-flex"
                 style={{width: "84%"}}
               >
                 <GatsbyImage
@@ -33,12 +33,11 @@ export default function ArtWork({ pageContext }) {
               <div
                 id="artwork-description"
                 style={{
-                    margin: "0 3em",
-                    fontFamily: "arial"
+                    margin: "0 2em",
                 }}
               >
-                <h5 className="mb-4">{artwork.title}</h5>
-                <div className="mb-2">{artwork.description.description}</div>
+                <h5 className="mb-3">{artwork.title}</h5>
+                <div className="mb-1">{artwork.description.description}</div>
                 <div>{artwork.date}</div>
               </div>
             </div>
