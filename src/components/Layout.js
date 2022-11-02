@@ -16,13 +16,13 @@ export default function Layout({ children }) {
           <NavBar/>
           <main style={{
               flexGrow: "1",
-              minHeight: "83vh",
+              minHeight: "77vh",
               display: "flex",
               flexDirection: "column"
           }}>
             {children}
           </main>
-          <Footer/>
+          <Footer />
         </div>
     )
 }
