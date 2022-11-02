@@ -1,30 +1,29 @@
 exports.createPages = async function ({ actions, graphql }) {
     const { data } = await graphql(`
     query {
-  allContentfulGalerieMenu {
-    nodes {
-      bilder {
-        image {
-          gatsbyImageData
-        }
-        title {
-          title
-        }
-        slug
-        kunstwerke {
-          title
-          slug
-          date
-          description {
-            description
-          }
-          image {
-            gatsbyImageData
+      allContentfulGalerieMenu {
+        nodes {
+          bilder {
+            image {
+              gatsbyImageData
+            }
+            title {
+              title
+            }
+            slug
+            kunstwerke {
+              title
+              slug
+              date
+              width
+              height
+              image {
+                gatsbyImageData
+              }
+            }
           }
         }
       }
-    }
-  }
     }
     `)
     data.allContentfulGalerieMenu.nodes.forEach(node => {
