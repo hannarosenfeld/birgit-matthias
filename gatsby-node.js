@@ -17,6 +17,7 @@ exports.createPages = async function ({ actions, graphql }) {
               date
               width
               height
+              type
               image {
                 gatsbyImageData
               }

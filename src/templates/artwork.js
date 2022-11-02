@@ -37,8 +37,9 @@ export default function ArtWork({ pageContext }) {
                 }}
               >
                 <h5 className="mb-3">{artwork.title}</h5>
-                <div className="mb-1">{artwork.width} cm x {artwork.height} cm</div>
-                <div>{artwork.date}</div>
+                <p className="mb-1">{artwork.width} cm x {artwork.height} cm,</p>
+                <p>{artwork.type}</p>
+                <p>{artwork.date}</p>
               </div>
             </div>
           </Layout>
