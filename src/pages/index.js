@@ -8,7 +8,7 @@ import Galerie from "../components/Galerie"
 const IndexPage = ({ data }) => {
     return (
         <Layout>
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+          <div style={{width: "88%", margin: "2.5em auto 0 auto"}}>
             <BildContainer image={data.allContentfulBild.nodes}/>
             <Galerie/>
           </div>
