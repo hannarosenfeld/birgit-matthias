@@ -32,7 +32,9 @@ export default function Footer() {
             <li style={{marginLeft: "-2em"}}>
               <Link to="/impressum">IMPRESSUM</Link>
             </li>
-            <li >DATENSCHUTZ</li>
+            <li>
+              <Link to="/datenschutz">DATENSCHUTZ</Link>
+            </li>
             <li><a><FontAwesomeIcon icon={faInstagram} /></a></li>
             <li><a href="https://www.facebook.com/BirgitMatthiasKunst/"><FontAwesomeIcon icon={faFacebookF} /></a></li>
           </ul>
