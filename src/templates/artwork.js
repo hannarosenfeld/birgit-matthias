@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 export default function ArtWork({ pageContext }) {
     const { artwork } = pageContext
     const image = getImage(artwork.image.gatsbyImageData)
-    console.log(artwork)
+
     return(
         <div
           id="artwork-detail-view"
@@ -37,7 +37,7 @@ export default function ArtWork({ pageContext }) {
                 }}
               >
                 <h5 className="mb-3">{artwork.title}</h5>
-                <p className="mb-1">{artwork.width} cm x {artwork.height} cm,</p>
+                <p className="mb-1">{artwork.dimension}</p>
                 <p>{artwork.type}</p>
                 <p>{artwork.date}</p>
               </div>

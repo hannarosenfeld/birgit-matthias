@@ -32,7 +32,7 @@ export default function GalerieTemplate({ pageContext }) {
                             width: "23%",
                             marginBottom: "1.5em"
                         }}>
-                        <Link to={`/galerie/${category.slug}/${werk.title}`}>
+                        <Link to={`/galerie/${category.slug}/${werk.slug}`}>
                           <GatsbyImage
                             image={image}
                           />

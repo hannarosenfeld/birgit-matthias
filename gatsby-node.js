@@ -15,8 +15,7 @@ exports.createPages = async function ({ actions, graphql }) {
               title
               slug
               date
-              width
-              height
+              dimension
               type
               image {
                 gatsbyImageData
@@ -39,6 +38,7 @@ exports.createPages = async function ({ actions, graphql }) {
                 },
             })
             bild.kunstwerke.map(werk => {
+                console.log(werk.slug)
                 actions.createPage({
                     path: `galerie/${slug}/${werk.slug}`,
                     component: require.resolve(`./src/templates/artwork.js`),
