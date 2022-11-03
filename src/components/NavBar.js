@@ -28,6 +28,8 @@ const modalStyle = {
 const modalContentStyle = {
     background: "#FDA1C9",
     padding: "1em 2.5em",
+    width: "10em",
+    height: "10em",
     fontSize: "1.5em"
 }
 const navLink = {
