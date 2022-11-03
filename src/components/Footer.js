@@ -1,4 +1,6 @@
-import React, { Link} from "react"
+import React from "react"
+import { Link } from "gatsby"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faFacebookF ,faInstagram } from '@fortawesome/free-brands-svg-icons'
 
@@ -27,8 +29,10 @@ export default function Footer() {
     return (
         <div className="footer" style={footer}>
           <ul style={footerNav}>
-            <li href="#" style={{marginLeft: "-2em"}}>IMPRESSUM</li>
-            <li href="#">DATENSCHUTZ</li>
+            <li style={{marginLeft: "-2em"}}>
+              <Link to="/impressum">IMPRESSUM</Link>
+            </li>
+            <li >DATENSCHUTZ</li>
             <li><a><FontAwesomeIcon icon={faInstagram} /></a></li>
             <li><a href="https://www.facebook.com/BirgitMatthiasKunst/"><FontAwesomeIcon icon={faFacebookF} /></a></li>
           </ul>
