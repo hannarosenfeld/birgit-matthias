@@ -93,6 +93,9 @@ a {
     #navbar {
         margin: 0;
     }
+    .modal-dialog {
+    margin-right: 0.8em;
+}
     #index-container {
         width: 100% !important;
     }
