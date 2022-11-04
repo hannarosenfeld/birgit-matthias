@@ -18,13 +18,12 @@ export default function ArtWork({ pageContext }) {
                   margin: "0",
                   padding: "0",
                   width: "100%",
-                  margin: "auto",
               }}
             >
               <div
                 id="artwork-image-container"
                 className="d-flex"
-                style={{maxWidth: "82%"}}
+                style={{maxWidth: "82%", maxHeight: "45em"}}
               >
                 <GatsbyImage
                   image={image}
