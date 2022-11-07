@@ -68,6 +68,13 @@ a {
     float: right;
 }
 
+
+/* INDEX BANNER*/
+#index-banner {
+    margin: 0 -28% !important;
+}
+
+
 /* GALERIE */
 .artwork-container img {
     object-fit: contain !important;
@@ -92,6 +99,10 @@ a {
     }
     #navbar {
         margin: 0;
+    }
+    #index-banner {
+        margin: 0;
+        border: pink;
     }
     .modal-dialog {
     margin-right: 0.8em;
