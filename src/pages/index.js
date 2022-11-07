@@ -6,12 +6,18 @@ import BildContainer from "../components/BildContainer"
 import Galerie from "../components/Galerie"
 import Banner from "../components/Banner"
 import UeberMich from "../components/UeberMich"
+import Ausstellungen from "../components/Ausstellungen"
 
 
 const IndexPage = ({ data }) => {
     return (
         <Layout>
-          <div id ="index-container" style={{width: "88%", margin: "1em auto 0 auto"}}>
+          <div
+            id ="index-container"
+            style={{
+                width: "88%",
+                margin: "1em auto 0 auto"
+            }}>
             <BildContainer image={data.allContentfulBild.nodes}/>
             <Banner/>
             <br/>
@@ -20,7 +26,7 @@ const IndexPage = ({ data }) => {
             <Galerie/>
             <div style={{border: "2px solid blue"}}>video</div>
             <UeberMich/>
-            <div style={{border: "2px solid yellow"}}>ausstellungen</div>
+            <Ausstellungen/>
           </div>
         </Layout>
     )
