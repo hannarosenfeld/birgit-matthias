@@ -29,7 +29,7 @@ function BildContainer(props) {
                   <div key={img.id} style={{width: "100%", margin: "0 auto"}}>
                     <BgImage
                       id="bild"
-                      className="mb-5 d-flex align-items-end"
+                      className="d-flex align-items-end"
                       image={image}
                       style={bildStyling}
                     />

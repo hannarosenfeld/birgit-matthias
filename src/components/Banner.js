@@ -4,14 +4,17 @@ import React from "react"
 export default function Banner() {
 
     return(
-        <div style={{border: "2px solid red"}}>
+        <div style={{
+            border: "2px solid red",
+            width: "156.8%",
+            margin: "0 0 0 -28.4%",
+                    }}>
           <div
             style={{
                 display: "grid",
-                gridTemplateColumns: "1.5fr 2.5fr 3fr",
+                gridTemplateColumns: "1.2fr 2.5fr 3fr",
                 gridTemplateRows: "1fr",
                 background: "aquamarine"
-
             }}
           >
             <div
