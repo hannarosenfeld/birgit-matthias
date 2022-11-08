@@ -130,7 +130,19 @@ a {
 
         margin: 1em 0.3em !important;
     }
-
+    #ausstellungen {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #ausstellungen-content {
+        padding: 1em;
+        grid-column: 1/3 !important;
+    }
+    .ausstellungen-textbox {
+    }
+    #einzelaustellungen {
+        flex-direction: column;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */

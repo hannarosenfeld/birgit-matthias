@@ -17,7 +17,9 @@ export default function Ausstellungen() {
           render={data => {
               const austellungen = data.allContentfulAusstellung.nodes
               return(
-                  <div style={{
+                  <div
+                    id="ausstellungen"
+                    style={{
                       width: "156.8%",
                       margin: "0 0 0 -28.4%",
                       background: "#FDA1C9"
@@ -33,6 +35,7 @@ export default function Ausstellungen() {
                     >
 
                       <div
+                        id="ausstellungen-content"
                         style={{
                             gridColumn: "2/3",
                         }}
@@ -46,17 +49,16 @@ export default function Ausstellungen() {
                         <div style={{width: "80%", height: "100%",border: "2px solid blue"}}></div>
                       </div>
                       <div
+                        className="ausstellungen-textbox"
                         style={{
                             margin: "6em 3em 0 -2em"
                         }}>
                         <p>Einzelausstellungen</p>
                         {austellungen.map(austellung => (
-                            <div>
-                              <p>
+                              <div className="d-flex flex-wrap mb-2" id="einzelausstellungen">
                                 <span style={{marginRight: "1.5em"}}>{austellung.zeitraum}</span>
                                 <span>{austellung.lokation}</span>
-                              </p>
-                            </div>
+                              </div>
                         ))}
                         <br/>
                         <br/>
