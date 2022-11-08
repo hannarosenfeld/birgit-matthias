@@ -52,7 +52,10 @@ export default function Ausstellungen() {
                         <p>Einzelausstellungen</p>
                         {austellungen.map(austellung => (
                             <div>
-                              <p><span style={{marginRight: "1.5em"}}>{austellung.zeitraum}</span><span>{austellung.lokation}</span></p>
+                              <p>
+                                <span style={{marginRight: "1.5em"}}>{austellung.zeitraum}</span>
+                                <span>{austellung.lokation}</span>
+                              </p>
                             </div>
                         ))}
                         <br/>
