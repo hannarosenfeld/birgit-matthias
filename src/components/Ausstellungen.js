@@ -20,56 +20,41 @@ export default function Ausstellungen() {
                   <div
                     id="ausstellungen"
                     style={{
-                      width: "156.8%",
-                      margin: "0 0 0 -28.4%",
-                      background: "#FDA1C9"
-                  }}>
-                    <br/>
-
+                        width: "156.8%",
+                        padding: "0 28.4%",
+                        margin: "0 0 0 -28.4%",
+                        background: "#FDA1C9"
+                    }}>
                     <div
                       style={{
+                          border: "2px solid yellow",
                           display: "grid",
-                          gridTemplateColumns: "1.2fr 2.5fr 3fr",
-                          gridTemplateRows: "0.5fr 0.5fr",
+                          gridTemplateColumns: "12em 2em",
+                          gridTemplateRows: "1fr 4fr 3fr"
                       }}
                     >
-
                       <div
-                        id="ausstellungen-content"
                         style={{
-                            gridColumn: "2/3",
+                            border: "2px solid blue",
+                        }}>
+                        Ausstellungen
+                      </div>
+                      <div
+                        style={{
+                            border: "2px solid white",
+                            gridRow: "2/4"
+
+                        }}>
+                      </div>
+                      <div
+                        style={{
+                            border: "2px solid beige",
+                            gridColumn: "2/4"
                         }}
                       >
-                      <h4
-                      style={{
-                          paddingBottom: "2px",
-                          maxWidth: "fit-content"
-                      }}>Ausstellungen</h4>
-                        <br/>
-                        <div style={{width: "80%", height: "100%",border: "2px solid blue"}}></div>
-                      </div>
-                      <div
-                        className="ausstellungen-textbox"
-                        style={{
-                            margin: "6em 3em 0 -2em"
-                        }}>
-                        <p>Einzelausstellungen</p>
-                        {austellungen.map(austellung => (
-                              <div className="d-flex flex-wrap mb-2" id="einzelausstellungen">
-                                <span style={{marginRight: "1.5em"}}>{austellung.zeitraum}</span>
-                                <span>{austellung.lokation}</span>
-                              </div>
-                        ))}
-                        <br/>
-                        <br/>
-                        <p>Ausstellungsbeteiligungen</p>
-                        <p>Mal- und Zeichenschule Weimar: In den Werkschauen, Ausleihungen an fördernde
-                          Unternehmen wie Grafe, Blankenhain und Bayer AG, Weimar, Thüringer Landtag,
-                          Gruppenausstellungen mit dem Malkurs Roger Bonnard im Erbenhof, Weimar und
-                          Seebachstift, Weimar</p>
+
                       </div>
                     </div>
-
                   </div>
               )
           }}

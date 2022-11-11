@@ -55,7 +55,7 @@ function NavModal() {
           <ul style={navLink} id="modal-menu">
             <li><Link to="/">HOME</Link></li>
             <li><Link to="/galerie">GALERIE</Link></li>
-            <li href="#">AKTUELLES</li>
+            <li><Link to="/aktuelles">AKTUELLES</Link></li>
             <li href="#">KONTAKT</li>
             <li href="#">PRESSE</li>
           </ul>
