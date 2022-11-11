@@ -8,18 +8,20 @@ export default function Aktuelles({ data }) {
     const entry = data.allContentfulBlog
     return(
         <Layout>
-          <div className="mt-5">
+          <div className="mt-5" style={{margin: "0 auto"}}>
             {entry.nodes.map(e => {
                 console.log(e.pictures)
                 return(
-                    <div key={e.id}>
+                    <div key={e.id} style={{marginBottom: "3em"}}>
                       <h3>{e.heading}</h3>
                       <div>{e.text.text}</div>
                       <div className="mt-3">
                       {e.pictures.map(img => {
                           const image = getImage(img.gatsbyImageData)
                           return(
-                              <GatsbyImage image={image} style={{width: "33em"}}/>
+                              <div className="mb-2" style={{width: "100%"}}>
+                              <GatsbyImage image={image} style={{width: "30em"}}/>
+                              </div>
                           )
                       })}
                     </div>
