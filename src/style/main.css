@@ -157,6 +157,15 @@ a {
     .galerie-image {
         width: 100% !important;
     }
+    #einzelaustellungen {
+        padding: 3em 0.5em!important;
+        grid-row: 2/3 !important;
+    }
+    #ausstellungsbeteiligungen {
+        grid-column: 1/4 !important;
+        grid-row: 3/4 !important;
+        padding: 1em 0.5em !important;
+    }
 }
 
 /* Smartphones (landscape) ----------- */

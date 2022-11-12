@@ -1,5 +1,9 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+
+import a from "../images/a.png"
 
 export default function Ausstellungen() {
     return(
@@ -27,36 +31,44 @@ export default function Ausstellungen() {
                     }}>
                     <div
                       style={{
-                          border: "2px solid yellow",
                           display: "grid",
-                          gridTemplateColumns: "12em 2em",
+                          gridTemplateColumns: "14em 2em",
                           gridTemplateRows: "1fr 4fr 3fr",
                       }}
                     >
                       <div
                         style={{
-                            border: "2px solid blue",
                             gridColumn: "1/4",
                             marginTop: "1.5em",
                         }}>
-                  <h4 style={{color: "#f7efef", marginLeft: "1em", textDecoration: "underline"}}>Ausstellungen</h4>
+                        <h4
+                          style={{
+                              color: "#f7efef",
+                              marginLeft: "1em",
+                              borderBottom: "1px solid #f7efef",
+                              paddingBottom: "2px",
+                              marginLeft: "3em",
+                              letterSpacing: "0.1em",
+                              width: "8em"
+                          }}>Ausstellungen</h4>
                       </div>
                       <div
                         style={{
-                            border: "2px solid white",
                             gridRow: "2/4",
+                            gridColumn: "1/3",
+                            padding: "3em 0"
 
                         }}>
+                        <img style={{width: "100%"}} src={a}/>
                       </div>
                       <div
+                        id="einzelaustellungen"
                         style={{
-                            border: "2px solid beige",
-                            gridColumn: "2/4",
+                            gridColumn: "3/4",
                             gridRow: "2/4",
                             padding: "3em",
                         }}
                       >
-                        <div>
                           <p>Einzelausstellungen</p>
                           <div>
                             {ausstellungen.map(e => (
@@ -64,7 +76,13 @@ export default function Ausstellungen() {
                             ))}
                           </div>
                         </div>
-                        <div style={{marginTop: "3em"}}>
+                        <div
+                          id="ausstellungsbeteiligungen"
+                          style={{
+                              gridColumn: "3/4",
+                              gridRow: "3/4",
+                              padding: "0 3em",
+                          }}>
                           <p>Ausstellungsbeteiligungen</p>
                           <div>
                             Mal- und Zeichenschule Weimar: In den Werkschauen, Ausleihungen an fördernde
@@ -75,7 +93,7 @@ export default function Ausstellungen() {
                         </div>
                       </div>
                     </div>
-                  </div>
+
               )
           }}
         />
