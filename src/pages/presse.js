@@ -7,9 +7,18 @@ import Layout from "../components/Layout"
 
 const Gallery = (props) => {
     const gallery = props.gallery
-    return(
-          <div className="mt-3">
 
+    console.log("hiii",gallery.pictures)
+    return(
+        <div className="mt-3">
+          {gallery.pictures.map(img => {
+              const image = getImage(img)
+              return(
+                  <div>
+                    <GatsbyImage image={image}/>
+                  </div>
+              )
+          })}
           </div>
     )
 }
@@ -20,13 +29,12 @@ export default function Presse({data}) {
         <Layout>
           <div className="mt-5" style={{width: "80%"}}>
             {entry.nodes.map(e => {
-                console.log(e.pictures)
                 return(
                     <div key={e.id} style={{marginBottom: "3em"}}>
                       <h5 style={{color: "#E42B9E"}}>{e.type}</h5>
                       <h4>{e.title}</h4>
                       <div>{e.text.text}</div>
-                      <Gallery gallery={entry}/>
+                      {e.pictures ? <Gallery gallery={e}/> : ""}
                     </div>
                 )
             })}
