@@ -5,6 +5,15 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 
 
+const Gallery = (props) => {
+    const gallery = props.gallery
+    return(
+          <div className="mt-3">
+
+          </div>
+    )
+}
+
 export default function Presse({data}) {
     const entry = data.allContentfulPresse
     return(
@@ -17,16 +26,7 @@ export default function Presse({data}) {
                       <h5 style={{color: "#E42B9E"}}>{e.type}</h5>
                       <h4>{e.title}</h4>
                       <div>{e.text.text}</div>
-                      <div className="mt-3">
-                        {e.pictures.map(img => {
-                            const image = getImage(img.gatsbyImageData)
-                            return(
-                                <div className="mb-2" style={{width: "100%"}}>
-                                  <GatsbyImage image={image} style={{width: "100%"}}/>
-                                </div>
-                            )
-                        })}
-                      </div>
+                      <Gallery gallery={entry}/>
                     </div>
                 )
             })}
