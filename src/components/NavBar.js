@@ -57,7 +57,7 @@ function NavModal() {
             <li><Link to="/galerie">GALERIE</Link></li>
             <li><Link to="/aktuelles">AKTUELLES</Link></li>
             <li href="#">KONTAKT</li>
-            <li href="#">PRESSE</li>
+            <li><Link to="/presse">PRESSE</Link></li>
           </ul>
         </Modal.Body>
       </Modal>
