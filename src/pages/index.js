@@ -7,6 +7,7 @@ import Galerie from "../components/Galerie"
 import Banner from "../components/Banner"
 import UeberMich from "../components/UeberMich"
 import Ausstellungen from "../components/Ausstellungen"
+import VideoBanner from "../components/VideoBanner"
 
 
 const IndexPage = ({ data }) => {
@@ -24,7 +25,7 @@ const IndexPage = ({ data }) => {
             <br/>
             <br/>
             <Galerie/>
-            <div style={{border: "2px solid blue"}}>video</div>
+            <VideoBanner/>
             <UeberMich/>
             <Ausstellungen/>
           </div>
