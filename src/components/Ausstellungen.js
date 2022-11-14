@@ -43,9 +43,9 @@ export default function Ausstellungen() {
                         }}>
                         <h4
                           style={{
-                              color: "#f7efef",
+                              color: "white",
                               marginLeft: "1em",
-                              borderBottom: "1px solid #f7efef",
+                              borderBottom: "1px solid white",
                               paddingBottom: "2px",
                               marginLeft: "3em",
                               letterSpacing: "0.1em",
