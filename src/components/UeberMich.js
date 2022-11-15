@@ -24,10 +24,10 @@ export default function UeberMich() {
                             <h4
                 style={{
                     color: "white",
-                    marginLeft: "1em",
                     borderBottom: "1px solid white",
                     paddingBottom: "2px",
                     marginLeft: "3em",
+                    marginBottom: "1em",
                     letterSpacing: "0.1em",
                     width: "8em"
                 }}>Über mich</h4>
