@@ -12,14 +12,14 @@ export default function Banner() {
             style={{
                 display: "grid",
                 gridTemplateColumns: "1.2fr 2.5fr 3fr",
-                gridTemplateRows: "1fr",
-                background: "aquamarine"
+                gridTemplateRows: "0.3fr 3fr 0.7fr",
+                background: "aquamarine",
             }}
           >
             <div
               style={{
                   gridColumn: "2/3",
-
+                  gridRow: "2/3"
               }}
             >
               <br/>
