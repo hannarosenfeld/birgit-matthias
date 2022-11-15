@@ -3,6 +3,7 @@ import {Modal} from 'react-bootstrap'
 
 import v from "../images/IN THE STUDIO WITH CLAIRE TABOURET.mp4"
 
+
 export default function VideoBanner(){
     const [isShown, setIsShown] = useState(false);
     function handleClick(e) {

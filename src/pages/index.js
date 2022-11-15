@@ -25,8 +25,14 @@ const IndexPage = ({ data }) => {
             <br/>
             <br/>
             <Galerie/>
+            <br/>
+            <br/>
             <VideoBanner/>
+            <br/>
+            <br/>
             <UeberMich/>
+            <br/>
+            <br/>
             <Ausstellungen/>
           </div>
         </Layout>
