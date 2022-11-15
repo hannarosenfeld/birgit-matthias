@@ -22,6 +22,7 @@ export default function Banner() {
                   gridRow: "2/3"
               }}
             >
+
               <br/>
               Ich arbeite hauptsächlich abstrakt mit Acryl auf Leinwand.
               Die Formate sind in der Regel groß gewählt.

@@ -21,6 +21,17 @@ export default function UeberMich() {
               }}
             >
               <br/>
+                            <h4
+                style={{
+                    color: "white",
+                    marginLeft: "1em",
+                    borderBottom: "1px solid white",
+                    paddingBottom: "2px",
+                    marginLeft: "3em",
+                    letterSpacing: "0.1em",
+                    width: "8em"
+                }}>Über mich</h4>
+              <br/>
               <h5>Birgit Matthias Malerin</h5>
 
               Ich bin autodidaktische Künstlerin und habe mich nebenberuflich seit der Schulzeit
