@@ -33,7 +33,7 @@ export default function Ausstellungen() {
                       style={{
                           display: "grid",
                           gridTemplateColumns: "14em 2em",
-                          gridTemplateRows: "1fr 4fr 3fr",
+                          gridTemplateRows: "1fr 4fr 3fr 2fr",
                       }}
                     >
                       <div
