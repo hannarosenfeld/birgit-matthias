@@ -4,22 +4,22 @@ import React from "react"
 export default function Banner() {
 
     return(
-        <div style={{
-            width: "156.8%",
-            margin: "0 0 0 -28.4%",
-                    }}>
-          <div
+        <div
             style={{
-                display: "grid",
-                gridTemplateColumns: "1.2fr 2.5fr 3fr",
-                gridTemplateRows: "0.3fr 3fr 0.7fr",
                 background: "aquamarine",
+                minHeight: "95vh",
             }}
+        >
+          <div
+              style={{
+                  width: "65vw",
+                  margin: "0 auto",
+                  padding: "2em 0",
+              }}
           >
             <div
               style={{
-                  gridColumn: "2/3",
-                  gridRow: "2/3"
+                  width: "50%",
               }}
             >
 

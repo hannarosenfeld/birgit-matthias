@@ -9,11 +9,16 @@ export default function Layout({ children }) {
           id="layout"
           style={{
               margin: `0 auto`,
-              width: `75vw`,
               padding: `0 1rem`,
               flexDirection: `column`,
           }}>
-          <header>
+          <header
+            style={{
+                margin: `0 auto`,
+                width: `75vw`,
+                padding: `0 1rem`,
+            }}
+          >
             <NavBar/>
           </header>
           <main style={{
@@ -24,7 +29,13 @@ export default function Layout({ children }) {
           }}>
             {children}
           </main>
-          <footer>
+          <footer
+            style={{
+                margin: `0 auto`,
+                width: `75vw`,
+                padding: `0 1rem`,
+            }}
+          >
             <Footer />
           </footer>
 

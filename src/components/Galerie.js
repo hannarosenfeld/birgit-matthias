@@ -56,12 +56,12 @@ function Bild(props) {
           onMouseLeave={handleMouseLeave}
         >
           <Link to={link}>
-          <GatsbyImage
-            image={image}
-            style={imageStyle}
-          />
-        <div style={centeredText}>{title}</div>
-        </Link>
+            <GatsbyImage
+              image={image}
+              style={imageStyle}
+            />
+            <div style={centeredText}>{title}</div>
+          </Link>
         </div>
     )
 }
@@ -91,17 +91,22 @@ export default function Galerie() {
           render={data => {
               const rubriken = data.allContentfulGalerieMenu
               return(
-                  <div style={{ width: "100%", heigth: "45vw"}}>
-                                  <h4
-                style={{
-                    color: "white",
-                    borderBottom: "1px solid white",
-                    paddingBottom: "2px",
-                    marginLeft: "3em",
-                    marginBottom: "2em",
-                    letterSpacing: "0.1em",
-                    width: "8em"
-                }}>Galerie</h4>
+                  <div
+                    style={{
+                        width: "75vw",
+                        margin: "0 auto",
+                        heigth: "45vw"
+                    }}>
+                    <h4
+                      style={{
+                          color: "white",
+                          borderBottom: "1px solid white",
+                          paddingBottom: "2px",
+                          marginLeft: "3em",
+                          marginBottom: "2em",
+                          letterSpacing: "0.1em",
+                          width: "8em"
+                      }}>Galerie</h4>
 
                     {rubriken.nodes.map(rubrik => {
                         return(

@@ -5,7 +5,7 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image'
 
 
 const bildContainer = {
-    width: "100%",
+    width: "65vw",
     display: "flex",
     margin: "0 auto",
     height: "90vh",

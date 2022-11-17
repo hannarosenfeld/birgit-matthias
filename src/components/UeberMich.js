@@ -4,20 +4,18 @@ import React from "react"
 export default function UeberMich() {
     return(
         <div style={{
-            width: "156.8%",
-            margin: "0 0 0 -28.4%",
+            width: "100%",
         }}>
           <div
             style={{
-                display: "grid",
-                gridTemplateColumns: "1.2fr 2.5fr 3fr",
-                gridTemplateRows: "1fr",
+                width: "65vw",
+                margin: "0 auto",
             }}
           >
             <div
               style={{
-                  gridColumn: "2/3",
-
+                  width: "50%",
+                  padding: "1em 0"
               }}
             >
               <br/>

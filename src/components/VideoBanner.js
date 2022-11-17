@@ -22,9 +22,9 @@ export default function VideoBanner(){
         <div
           className="video-banner"
           style={{
-              width: "156.8%",
+              width: "100%",
               padding: "0",
-              margin: "0 0 0 -28.4%",
+              margin: "0 auto",
               position: "relative",
               zIndex: "0",
               display: "flex",

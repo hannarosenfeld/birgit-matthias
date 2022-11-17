@@ -24,77 +24,76 @@ export default function Ausstellungen() {
                   <div
                     id="ausstellungen"
                     style={{
-                        width: "156.8%",
-                        padding: "0 28.4%",
-                        margin: "0 0 0 -28.4%",
+                        width: "100%",
                         background: "#FDA1C9",
+                        minHeight: "95vh",
+                        padding: "2em 0"
                     }}>
                     <div
-                      id="ausstellungen_container"
                       style={{
-                          display: "grid",
-                          gridTemplateColumns: "14em 2em",
-                          gridTemplateRows: "1fr 4fr 3fr 2fr",
+                          width: "65vw",
+                          margin: "0 auto",
                       }}
                     >
-                      <div
+                      <h4
                         style={{
-                            gridColumn: "1/4",
-                            marginTop: "1.5em",
-                        }}>
-                        <h4
-                          style={{
-                              color: "white",
-                              marginLeft: "1em",
-                              borderBottom: "1px solid white",
-                              paddingBottom: "2px",
-                              marginLeft: "3em",
-                              letterSpacing: "0.1em",
-                              width: "8em"
-                          }}>Ausstellungen</h4>
-                      </div>
+                            color: "white",
+                            marginLeft: "1em",
+                            borderBottom: "1px solid white",
+                            paddingBottom: "2px",
+                            marginLeft: "3em",
+                            letterSpacing: "0.1em",
+                            width: "8em"
+                        }}>Ausstellungen</h4>
                       <div
-                        id="ausstellungen_img"
+                        id="ausstellungen-container"
                         style={{
-                            gridRow: "2/4",
-                            gridColumn: "1/3",
-                            padding: "3em 0"
-
-                        }}>
-                        <img style={{width: "100%"}} src={a}/>
-                      </div>
-                      <div
-                        id="einzelaustellungen"
-                        style={{
-                            gridColumn: "3/4",
-                            gridRow: "2/4",
-                            padding: "3em",
+                            padding: "3em 0",
+                            display: "flex"
                         }}
                       >
-                          <p>Einzelausstellungen</p>
-                          <div>
-                            {ausstellungen.map(e => (
-                                <p><span style={{marginRight: "1em"}}>{e.zeitraum}</span> <span>{e.lokation}</span></p>
-                            ))}
-                          </div>
-                        </div>
-                        <div
-                          id="ausstellungsbeteiligungen"
+                        <img
                           style={{
-                              gridColumn: "3/4",
-                              gridRow: "3/4",
-                              padding: "0 3em",
-                          }}>
-                          <p>Ausstellungsbeteiligungen</p>
-                          <div>
-                            Mal- und Zeichenschule Weimar: In den Werkschauen, Ausleihungen an fördernde
-                            Unternehmen wie Grafe, Blankenhain und Bayer AG, Weimar, Thüringer Landtag,
-                            Gruppenausstellungen mit dem Malkurs Roger Bonnard im Erbenhof, Weimar und
-                            Seebachstift, Weimar
+                              width: "18em",
+                          }}
+                          src={a}/>
+
+                        <div
+                          style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              justifyContent: "space-between"
+                          }}
+                        >
+                          <div
+                            style={{
+                                padding: "0 3em",
+                                margin: "1em 0"
+                            }}>
+                            <p className="mt-3">Einzelausstellungen</p>
+                            <div>
+                              {ausstellungen.map(e => (
+                                  <p><span style={{marginRight: "1em"}}>{e.zeitraum}</span> <span>{e.lokation}</span></p>
+                              ))}
+                            </div>
+                          </div>
+                          <div
+                            style={{
+                                padding: "0 3em",
+                                margin: "1em 0"
+                            }}>
+                            <p>Ausstellungsbeteiligungen</p>
+                            <div>
+                              Mal- und Zeichenschule Weimar: In den Werkschauen, Ausleihungen an fördernde
+                              Unternehmen wie Grafe, Blankenhain und Bayer AG, Weimar, Thüringer Landtag,
+                              Gruppenausstellungen mit dem Malkurs Roger Bonnard im Erbenhof, Weimar und
+                              Seebachstift, Weimar
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
 
               )
           }}

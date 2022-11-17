@@ -13,13 +13,10 @@ import VideoBanner from "../components/VideoBanner"
 const IndexPage = ({ data }) => {
     return (
         <Layout>
-          <div
-            id ="index-container"
-            style={{
-                width: "88%",
-                margin: "1em auto 0 auto"
-            }}>
-            <BildContainer image={data.allContentfulBild.nodes}/>
+          <div id="index-container">
+            <BildContainer
+              image={data.allContentfulBild.nodes}
+            />
             <Banner/>
             <br/>
             <br/>
