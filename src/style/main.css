@@ -111,7 +111,7 @@ a {
     }
     #index-banner {
         margin: 0;
-        border: pink;
+
     }
     .modal-dialog {
     margin-right: 0.8em;
@@ -170,13 +170,23 @@ a {
     .galerie-image {
         width: 100% !important;
     }
-    #einzelaustellungen {
-        padding: 3em 0.5em!important;
+    #ausstellungen {
+
+    }
+    #ausstellungen_container {
+        grid-template-rows: 0.25fr 2fr 1fr 1fr 0.25fr !important;
+    }
+    #ausstellungen_img {
         grid-row: 2/3 !important;
+    }
+    #einzelaustellungen {
+        padding: 0 0.5em!important;
+        grid-column: 1/4 !important;
+        grid-row: 3/4 !important;
     }
     #ausstellungsbeteiligungen {
         grid-column: 1/4 !important;
-        grid-row: 3/4 !important;
+        grid-row: 4/5 !important;
         padding: 1em 0.5em !important;
     }
 }

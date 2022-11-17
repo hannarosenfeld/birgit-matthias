@@ -30,6 +30,7 @@ export default function Ausstellungen() {
                         background: "#FDA1C9",
                     }}>
                     <div
+                      id="ausstellungen_container"
                       style={{
                           display: "grid",
                           gridTemplateColumns: "14em 2em",
@@ -53,6 +54,7 @@ export default function Ausstellungen() {
                           }}>Ausstellungen</h4>
                       </div>
                       <div
+                        id="ausstellungen_img"
                         style={{
                             gridRow: "2/4",
                             gridColumn: "1/3",
