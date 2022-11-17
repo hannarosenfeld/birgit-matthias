@@ -2,8 +2,8 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-
 import a from "../images/a.png"
+
 
 export default function Ausstellungen() {
     return(

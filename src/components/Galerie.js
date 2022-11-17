@@ -93,7 +93,7 @@ export default function Galerie() {
               return(
                   <div
                     style={{
-                        width: "75vw",
+                        width: "65vw",
                         margin: "0 auto",
                         heigth: "45vw"
                     }}>
