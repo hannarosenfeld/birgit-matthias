@@ -1,7 +1,6 @@
 import React from 'react'
 import { BgImage } from 'gbimage-bridge'
-import { converToBgImage } from "gbimage-bridge"
-import { getImage, GatsbyImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 
 
 const bildContainer = {

@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { BgImage } from "gbimage-bridge"
 
 const galerieStyle = {
     display: "flex",

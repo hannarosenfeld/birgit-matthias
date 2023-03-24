@@ -35,7 +35,7 @@ export default function Footer() {
             <li>
               <Link to="/datenschutz">DATENSCHUTZ</Link>
             </li>
-            <li><a><FontAwesomeIcon icon={faInstagram} /></a></li>
+            <li><a href="#!"><FontAwesomeIcon icon={faInstagram} /></a></li>
             <li><a href="https://www.facebook.com/BirgitMatthiasKunst/"><FontAwesomeIcon icon={faFacebookF} /></a></li>
           </ul>
         </div>
