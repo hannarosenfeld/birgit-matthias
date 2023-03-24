@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
 import Button from 'react-bootstrap/Button'
@@ -68,7 +68,7 @@ function NavModal() {
 export default function NavBar() {
     return (
         <div id="navbar" style={navStyle}>
-          <Link to="/"><img src={logo}/></Link>
+          <Link to="/"><img src={logo} alt="logo Birgit"/></Link>
             <NavModal/>
         </div>
     )

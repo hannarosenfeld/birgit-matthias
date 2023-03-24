@@ -1,5 +1,4 @@
 import React, { useState }  from 'react'
-import {Modal} from 'react-bootstrap'
 
 import v from "../images/IN THE STUDIO WITH CLAIRE TABOURET.mp4"
 
