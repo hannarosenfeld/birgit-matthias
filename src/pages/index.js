@@ -2,12 +2,12 @@ import * as React from "react"
 import { graphql } from 'gatsby'
 
 import Layout from "../components/layout/Layout"
-import BildContainer from "../components/BildContainer"
-import Galerie from "../components/Galerie"
-import Banner from "../components/Banner"
-import UeberMich from "../components/UeberMich"
-import Ausstellungen from "../components/Ausstellungen"
-import VideoBanner from "../components/VideoBanner"
+import BildContainer from "../components/bildContainer/BildContainer"
+import Banner from "../components/banner/Banner"
+import Galerie from "../components/galerie/Galerie"
+import VideoBanner from "../components/videoBanner/VideoBanner"
+import UeberMich from "../components/ueberMich/UeberMich"
+import Ausstellungen from "../components/ausstellungen/Ausstellungen"
 
 
 const IndexPage = ({ data }) => {

@@ -13,7 +13,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 // TODO 
 // do we need all those IDs?
-export default function NavModal(siteMenu) {
+export default function NavModal({siteMenu}) {
     const [show, setShow] = useState(false);
   
     const handleClose = () => setShow(false);

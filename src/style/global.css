@@ -1,11 +1,11 @@
 @font-face {
     font-family: globalfont-alt;
-    src: url(Cocomat-Light-trial.ttf);
+    src: url(../assets/fonts/Cocomat-Light-trial.ttf);
 }
 
 @font-face {
     font-family: globalfont;
-    src: url(D-DINCondensed.otf);
+    src: url(../assets/fonts/D-DINCondensed.otf);
 }
 
 
@@ -41,11 +41,6 @@ a {
 }
 
 
-/* FOOTER */
-.footer li {
-    list-style: none;
-    margin-right: 12%;
-}
 
 /* FORM  */
 .kontakt label input {
@@ -100,12 +95,6 @@ a {
         padding: 0 !important;
         margin: 0 !important;
     }
-    #ausstellungen-container {
-        flex-direction: column !important;
-    }
-    #ausstellungen-container div {
-        padding: 0 !important;
-    }
 
 }
 
@@ -122,50 +111,4 @@ a {
     .galerie-image {
         width: 100% !important;
     }
-    #ausstellungen {
-        max-width: 100%;
-
-    }
-    #ausstellungen_container {
-        grid-template-rows: 0.25fr 1fr 0.25fr 0.25fr 0.25fr !important;
-        grid-template-columns: 1fr !important;
-    }
-    #ausstellungen_img {
-        grid-row: 2/3 !important;
-        grid-column: 1 !important;
-    }
-    #einzelaustellungen {
-        padding: 0 0.5em!important;
-        grid-row: 3/4 !important;
-    }
-    #ausstellungsbeteiligungen {
-        grid-row: 4/5 !important;
-        padding: 1em 0.5em !important;
-    }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-    /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-    /* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Styles */
-
 }
