@@ -1,0 +1,32 @@
+
+
+/* iPads (portrait) AND Smartphones (portrait) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    #ausstellungen-container {
+        flex-direction: column !important;
+    }
+    #ausstellungen-container div {
+        padding: 0 !important;
+    }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+        #ausstellungen_container {
+        grid-template-rows: 0.25fr 1fr 0.25fr 0.25fr 0.25fr !important;
+        grid-template-columns: 1fr !important;
+    }
+    #ausstellungen_img {
+        grid-row: 2/3 !important;
+        grid-column: 1 !important;
+    }
+    #einzelaustellungen {
+        padding: 0 0.5em!important;
+        grid-row: 3/4 !important;
+    }
+    #ausstellungsbeteiligungen {
+        grid-row: 4/5 !important;
+        padding: 1em 0.5em !important;
+    }
+}

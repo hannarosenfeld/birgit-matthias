@@ -1,0 +1,19 @@
+.footer  {
+    bottom: 0;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 75vw;
+    align-items: center;
+    margin-top: 2em;
+}
+.footer li {
+    list-style: none;
+    margin-right: 12%;
+}
+.footerNav  {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}

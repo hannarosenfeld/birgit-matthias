@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "../components/Layout"
-import Galerie from "../components/Galerie"
+import Layout from "../../components/layout/Layout"
+import Galerie from "../../components/galerie/Galerie"
 
 
 export default function GaleriePage() {

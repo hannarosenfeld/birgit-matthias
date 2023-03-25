@@ -2,6 +2,7 @@ module.exports = {
     siteMetadata: {
         title: `Birgit Matthias`,
         siteUrl: `https://www.yourdomain.tld`,
+        description: "Birgit Matthias kunstlerin"
     },
     plugins: [
         {

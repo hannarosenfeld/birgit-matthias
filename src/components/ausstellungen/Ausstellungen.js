@@ -1,9 +1,11 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import a from "../images/a.png"
+import a from "../../assets/images/a.png"
 
-
+// TODO
+// * StaticQuery is deprecated
+// remove inline styles
 export default function Ausstellungen() {
     return(
         <StaticQuery

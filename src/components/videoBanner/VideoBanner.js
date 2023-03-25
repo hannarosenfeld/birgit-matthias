@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
 
-import v from "../images/IN THE STUDIO WITH CLAIRE TABOURET.mp4"
+import v from "../../assets/images/IN THE STUDIO WITH CLAIRE TABOURET.mp4"
 
 
 export default function VideoBanner(){
