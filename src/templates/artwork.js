@@ -1,7 +1,7 @@
 import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout/Layout"
 
 export default function ArtWork({ pageContext }) {
     const { artwork } = pageContext

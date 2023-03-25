@@ -1,0 +1,40 @@
+
+.button-style {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.8em;
+}
+
+.modal-style {
+    margin: 0.5em auto;
+}
+modalcontent-style {
+    background: #FDA1C9;
+    padding: 1em 2.5em;
+    width: 10em;
+    height: 10em;
+    font-size: 1.5em;
+}
+
+
+/* 
+// TODO check if this class exists
+.modal-backdrop {
+    opacity: 0 !important;
+} 
+.modal-dialog {
+    margin-top: 0;
+    margin-right: 8em;
+}
+.modal-content {
+    width: auto;
+    float: right;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .modal-dialog {
+        margin-right: 0.8em;
+        }
+}
+*/

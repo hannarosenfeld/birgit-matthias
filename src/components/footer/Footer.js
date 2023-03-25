@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faFacebookF ,faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-import "../style/main.css"
+import "../../style/global.css"
 
 
 const footer = {
