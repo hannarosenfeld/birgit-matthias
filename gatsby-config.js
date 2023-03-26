@@ -13,8 +13,21 @@ module.exports = {
         accessToken: `V0Q6Mv6ZjTOS7x_MEPHLS31gYsfqwkkk1hQay43tgxE`
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Birgit Matthias`,
+        short_name: `BM`,
+        start_url: `/`,
+        background_color: `#e8eaef`,
+        theme_color: `#3273dc`,
+        display: `minimal-ui`,
+        icon: `src/assets/images/logo.png`
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    'gatsby-plugin-netlify'
   ]
 }
