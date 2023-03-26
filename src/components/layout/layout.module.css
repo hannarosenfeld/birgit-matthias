@@ -1,44 +1,33 @@
+/* 
+//TODO clean this area once we are sure is not affecting other areas 
+*/
 .layout-container {
-    height: 100vh;
-    margin: 0 auto;
-              padding: 0 1rem;
-              flex-direction: column;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        'header'
-        'main'
-        'footer';
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1200px;
 }
-.layout-style > header {
-    grid-area: header;
-      margin: 0 auto;
-    width: 75vw;
-    padding: 0 1rem;
+.layout-container > header {
+  margin: 0 auto;
+  width: 85%;
+  padding: 0 1em;
+  border: 1px solid red;
 }
-.layout-style > main {
-  grid-area: main;
-  padding: 15px 5px 10px 5px;
-  flex-grow: 1;
-              min-height: 77vh;
-              display: flex;
-              flex-direction: column;
+.layout-container > main {
+  min-height: 77vh;
 }
-.layout-style > footer {
+
+/* .layout-container > footer {
   grid-area: footer;
+} */
+
+.layout-container > footer {
+  margin: 0 auto;
+  width: 85%;
+  padding: 0 1em;
 }
 
-.layout-style > footer {
-    margin: 0 auto;
-    width: 75vw;
-    padding: 0 1rem;
-}
-
-
-
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
-    .layout-style {
-        width: 100% !important;
-    }   
-}
+/* @media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .layout-container {
+    width: 100%;
+  }
+} */

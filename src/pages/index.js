@@ -12,21 +12,12 @@ import Ausstellungen from '../components/ausstellungen/Ausstellungen'
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <div id="index-container">
+      <div className="index-container">
         <BildContainer image={data.allContentfulBild.nodes} />
         <Banner />
-        <br />
-        <br />
-        <br />
         <Galerie />
-        <br />
-        <br />
         <VideoBanner />
-        <br />
-        <br />
         <UeberMich />
-        <br />
-        <br />
         <Ausstellungen />
       </div>
     </Layout>
