@@ -3,16 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "description": "birgit-matthias",
-  "author": "Hanna Rosenfeld",
+  "author": "Hanna Rosenfeld / Darayaq",
   "keywords": [
     "gatsby"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/../issues"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.3.0",
@@ -34,5 +42,8 @@
     "react": "18.2.0",
     "react-bootstrap": "2.7.2",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8.7"
   }
 }
