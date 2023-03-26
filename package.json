@@ -32,6 +32,7 @@
     "gatsby": "5.8.0",
     "gatsby-background-image": "1.6.0",
     "gatsby-plugin-image": "3.8.0",
+    "gatsby-plugin-manifest": "5.8.0",
     "gatsby-plugin-sharp": "5.8.0",
     "gatsby-source-contentful": "8.8.0",
     "gatsby-source-filesystem": "5.8.0",
