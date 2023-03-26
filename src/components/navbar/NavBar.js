@@ -34,9 +34,9 @@ const siteMenu = [
 // TODO: size logo, provisory solution
 export default function NavBar() {
   return (
-    <div id="navbar" className={navStyle}>
+    <div className={navStyle}>
       <Link to="/">
-        <img src={logo} alt="logo Birgit" width="150px" />
+        <img src={logo} alt="logo Birgit" />
       </Link>
       <NavModal siteMenu={siteMenu} />
     </div>
