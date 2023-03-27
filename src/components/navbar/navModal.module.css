@@ -1,36 +1,94 @@
-
 .button-style {
-    background: none;
-    border: none;
-    color: black;
-    font-size: 1.8em;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1.8rem;
 }
 
+.button-style:hover,
+.button-style:active {
+  background: none;
+  color: black;
+  border: 2px solid;
+  padding: 4px 8px 0.9px;
+}
+
+.button-style > btn:active {
+  color: red;
+  background-color: red;
+  border-color: inherit;
+}
 .modal-style {
-    margin: 0.5em auto;
-}
-modalcontent-style {
-    background: #FDA1C9;
-    padding: 1em 2.5em;
-    width: 10em;
-    height: 10em;
-    font-size: 1.5em;
+  /* margin: 0.5em auto; */
+  display: flex;
+  width: auto;
+  margin: 2em;
+  align-self: flex-end;
+  /* border: 3px solid rgb(94, 42, 216); */
 }
 
+.modal-dialog {
+  margin-top: 0;
+  margin-right: 8em;
+  /* border: 3px solid rgb(255, 0, 221); */
+}
+.modal-content {
+  width: auto;
+  padding: 3em;
+  margin: 3em !important;
+}
+
+.modal-content-container {
+  align-self: flex-end;
+  /* border: 3px solid red; */
+}
+
+.modalcontent-style {
+  background: #fda1c9;
+  padding: 1em 2.5em;
+  width: fit-content;
+  height: auto;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-end;
+  /* border: 3px solid blue; */
+}
+
+.nav-link {
+  color: #f9f7f7;
+  list-style: none;
+}
+.nav-link > li {
+  margin-left: -1em;
+}
+.nav-link > li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.modal-backdrop {
+  opacity: 0 !important;
+  /* border: 5px solid rgb(1, 78, 20); */
+}
 
 /* 
 // TODO check if this class exists
+
+
 .modal-backdrop {
-    opacity: 0 !important;
-} 
+  opacity: 0 !important;
+}
 .modal-dialog {
-    margin-top: 0;
-    margin-right: 8em;
+  margin-top: 0;
+  margin-right: 8em;
 }
 .modal-content {
-    width: auto;
-    float: right;
+  width: auto;
+  float: right;
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
     .modal-dialog {

@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-import '../../style/global.css'
 import {
   buttonStyle,
   modalStyle,
-  modalContentStyle,
-  navLink
+  modalcontentStyle,
+  navLink,
+  modalContentContainer
 } from './navModal.module.css'
+import '../../style/global.css'
 
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -24,22 +26,31 @@ export default function NavModal({ siteMenu }) {
 
   return (
     <>
-      <Button className={buttonStyle} onClick={handleShow}>
+      <Button variant="outline" className={buttonStyle} onClick={handleShow}>
         <FontAwesomeIcon icon={faBars} />
       </Button>
 
       <Modal className={modalStyle} show={show} onHide={handleClose}>
-        <Modal.Body className={modalContentStyle}>
-          {siteMenu.map((item) => {
-            return (
-              <ul className={navLink} key={item.label}>
-                <li>
-                  <Link to={item.URL}>{item.Label}</Link>
-                </li>
-              </ul>
-            )
-          })}
-        </Modal.Body>
+        {/* <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header> */}
+
+        {/* from react-bootstrap -> modal-dialog */}
+        {/* from react-bootstrap -> modal-content */}
+        <div className={modalContentContainer}>
+          <Modal.Body className={modalcontentStyle}>
+            {/* <button onClick={handleClose}>X</button> */}
+            <ul className={navLink}>
+              {siteMenu.map((item) => {
+                return (
+                  <li key={item.label}>
+                    <Link to={item.URL}>{item.Label.toUpperCase()}</Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </Modal.Body>
+        </div>
       </Modal>
     </>
   )
