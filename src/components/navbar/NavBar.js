@@ -15,23 +15,22 @@ const siteMenu = [
   },
   {
     URL: '/galerie',
-    Label: 'GALERIE'
+    Label: 'Galerie'
   },
   {
     URL: '/aktuelles',
-    Label: 'AKTUELLES'
+    Label: 'Aktuelles'
   },
   {
     URL: '/kontakt',
-    Label: 'KONTAKT'
+    Label: 'Kontakt'
   },
   {
     URL: '/presse',
-    Label: 'PRESSE'
+    Label: 'Presse'
   }
 ]
 
-// TODO: size logo, provisory solution
 export default function NavBar() {
   return (
     <div className={navStyle}>
