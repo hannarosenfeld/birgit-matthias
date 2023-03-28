@@ -2,33 +2,27 @@ import React from 'react'
 import { BgImage } from 'gbimage-bridge'
 import { getImage } from 'gatsby-plugin-image'
 
-const bildContainer = {
-  width: '65vw',
-  display: 'flex',
-  margin: '0 auto',
-  height: '90vh',
-  alignItems: 'center'
-}
-const bildStyling = {
-  margin: '0 auto',
-  objectFit: 'contain',
-  height: '75vh',
-  width: '100%'
-}
+import {
+  bildContainer,
+  bildStyling,
+  frameImage
+} from './bildContainer.module.css'
+import '../../style/global.css'
 
 function BildContainer(props) {
   const image = props.image
+  // console.log(props)
   return (
-    <div id="bild-container" style={bildContainer}>
+    <div className={`column-inner ${bildContainer}`}>
       {image.map((img) => {
         const image = getImage(img.image)
         return (
-          <div key={img.id} style={{ width: '100%', margin: '0 auto' }}>
+          <div key={img.id} className={frameImage}>
             <BgImage
-              id="bild"
-              className="d-flex align-items-end"
+              id={img.title}
               image={image}
-              style={bildStyling}
+              className={bildStyling}
+              alt={img.title}
             />
           </div>
         )

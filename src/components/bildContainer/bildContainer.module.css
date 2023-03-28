@@ -1,0 +1,17 @@
+.bild-container {
+  display: flex;
+  align-items: center;
+}
+.frame-image {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4em;
+  position: relative;
+}
+.bild-styling {
+  position: absolute;
+  margin: 0 auto;
+  object-fit: cover;
+  height: 100vh;
+  width: auto;
+}

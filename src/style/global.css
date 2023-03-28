@@ -27,6 +27,16 @@ a {
   text-decoration: none;
 }
 
+/* 
+* inner size 
+* for all components 
+*/
+.column-inner {
+  width: 65vw;
+  margin: 0 auto;
+  /* border: 1px solid rgb(31, 255, 125); */
+}
+
 /* INDEX BANNER*/
 #index-banner {
   margin: 0 -28% !important;
