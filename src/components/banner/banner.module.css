@@ -1,0 +1,15 @@
+.background {
+  background: aquamarine;
+  width: 100%;
+  min-height: 95vh;
+  padding: 8em 0;
+}
+
+.text-style {
+  min-height: 95vh;
+  max-width: 69ch;
+}
+.text-style > p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
