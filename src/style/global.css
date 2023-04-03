@@ -42,11 +42,6 @@ a {
   margin: 0 -28% !important;
 }
 
-/* GALERIE */
-.artwork-container img {
-  object-fit: contain !important;
-}
-
 /* FORM  */
 .kontakt label input {
   width: 100%;
@@ -75,13 +70,6 @@ a {
   } */
   #bild-container {
     width: 100% !important;
-  }
-  .galerie-list-box {
-    width: 30vw !important;
-    height: 30vw !important;
-  }
-  .galerie-image {
-    width: 30% !important;
   }
   .artwork-container {
     flex-direction: column;
