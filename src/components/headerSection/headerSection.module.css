@@ -1,0 +1,9 @@
+.title-section {
+  padding: 2em 0;
+}
+
+.title-section > h4 {
+  color: inherit;
+  border-bottom: 1px solid #212529;
+  width: 6ch;
+}
