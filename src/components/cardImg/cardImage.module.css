@@ -1,0 +1,32 @@
+.bild-box {
+  /* height: 20vh; */
+  /* width: 20vw; */
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.bild-box:hover .centeredText {
+  opacity: 1;
+}
+.imageStyle {
+  width: 150%;
+}
+.imageStyle:hover {
+  filter: brightness(280%) contrast(50%);
+}
+.centeredText {
+  font-size: 2.4vw;
+  color: #e42b9e;
+  text-shadow: 1px 1px #000123;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: #d8d9f3bb;
+  padding: 0.5em;
+}
