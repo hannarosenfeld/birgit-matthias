@@ -3,8 +3,9 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 
 import CardImage from '../cardImg/CardImage'
+import HeaderSection from '../headerSection/HeaderSection'
 
-import { galerieStyle, titleSection, container } from './gallerie.module.css'
+import { galerieStyle, container } from './gallerie.module.css'
 import '../../style/global.css'
 
 export default function Galerie() {
@@ -30,9 +31,7 @@ export default function Galerie() {
   const rubriken = data.allContentfulGalerieMenu
   return (
     <section className={`column-inner ${container}`}>
-      <div className={titleSection}>
-        <h4>Galerie</h4>
-      </div>
+      <HeaderSection title="Galerie" />
       {rubriken.nodes.map((rubrik) => {
         return (
           <div className={galerieStyle}>
