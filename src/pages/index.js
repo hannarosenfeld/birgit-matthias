@@ -2,7 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout/Layout'
-import BildContainer from '../components/bildContainer/BildContainer'
+import Hero from '../components/bildContainer/Hero'
 import Banner from '../components/banner/Banner'
 import Galerie from '../components/galerie/Galerie'
 import VideoBanner from '../components/videoBanner/VideoBanner'
@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <div className="index-container">
-        <BildContainer image={data.allContentfulBild.nodes} />
+        <Hero image={data.allContentfulBild.nodes} />
         <Banner />
         <Galerie />
         <VideoBanner />
