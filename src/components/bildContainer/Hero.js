@@ -2,16 +2,11 @@ import React from 'react'
 import { BgImage } from 'gbimage-bridge'
 import { getImage } from 'gatsby-plugin-image'
 
-import {
-  bildContainer,
-  bildStyling,
-  frameImage
-} from './bildContainer.module.css'
+import { bildContainer, bildStyling, frameImage } from './hero.module.css'
 import '../../style/global.css'
 
-function BildContainer(props) {
+function Hero(props) {
   const image = props.image
-  // console.log(props)
   return (
     <div className={`column-inner ${bildContainer}`}>
       {image.map((img) => {
@@ -31,4 +26,4 @@ function BildContainer(props) {
   )
 }
 
-export default BildContainer
+export default Hero
